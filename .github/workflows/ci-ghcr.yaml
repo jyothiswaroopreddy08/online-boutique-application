@@ -14,7 +14,7 @@ permissions:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository_owner }}/online-boutique-frontend
+  IMAGE_NAME: ${{ github.repository_owner }}/online-boutique-application
 
 jobs:
   build-and-push:
@@ -39,7 +39,7 @@ jobs:
         shell: bash
         run: |
           echo "sha=${GITHUB_SHA}" >> "$GITHUB_OUTPUT"
-          echo "image=ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/online-boutique-frontend" >> "$GITHUB_OUTPUT"
+          echo "image=ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/online-boutique-application" >> "$GITHUB_OUTPUT"
 
       - name: Build and push
         uses: docker/build-push-action@v6
