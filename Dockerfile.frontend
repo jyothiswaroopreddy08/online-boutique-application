@@ -1,5 +1,5 @@
 FROM us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7
 
-LABEL org.opencontainers.image.title="Online Boutique Frontend"
+LABEL org.opencontainers.image.title="Online Boutique Application"
 LABEL org.opencontainers.image.description="DevOps lab frontend image"
 LABEL org.opencontainers.image.source="https://github.com/jyothiswaroopreddy08/online-boutique-application"
