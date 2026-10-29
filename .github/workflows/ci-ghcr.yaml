@@ -10,7 +10,7 @@ on:
 
 permissions:
   contents: read
-  packages: write
+  packages: write # Write Permissions are required to publish packages to GitHub Container Registry (GHCR)
 
 env:
   REGISTRY: ghcr.io
